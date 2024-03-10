@@ -77,13 +77,13 @@ async function connectWebsite() {
           <ul className='flex items-end justify-between py-3 bg-transparent text-white pr-5'>
           <li className='flex items-end ml-5 pb-2'>
             <Link to="/">
-            <img src={fullLogo} alt="" width={120} height={120} className="inline-block -mt-2"/>
+            {/* <img src={fullLogo} alt="" width={120} height={120} className="inline-block -mt-2"/> */}
             <div className='inline-block font-bold text-xl ml-2'>
               NFT Marketplace
             </div>
             </Link>
           </li>
-          <li className='w-2/6'>
+          <li className='w-3/6'>
             <ul className='lg:flex justify-between font-bold mr-10 text-lg'>
               {location.pathname === "/" ? 
               <li className='border-b-2 hover:pb-0 p-2'>
@@ -96,11 +96,11 @@ async function connectWebsite() {
               }
               {location.pathname === "/sellNFT" ? 
               <li className='border-b-2 hover:pb-0 p-2'>
-                <Link to="/sellNFT">List My NFT</Link>
+                <Link to="/sellNFT">Add My NFT</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
-                <Link to="/sellNFT">List My NFT</Link>
+                <Link to="/sellNFT">Add My NFT</Link>
               </li>              
               }              
               {location.pathname === "/profile" ? 
@@ -122,6 +122,11 @@ async function connectWebsite() {
         <div className='text-white text-bold text-right mr-10 text-sm'>
           {currAddress !== "0x" ? "Connected to":"Not Connected. Please login to view NFTs"} {currAddress !== "0x" ? (currAddress.substring(0,15)+'...'):""}
         </div>
+        <div className="w-full  text-center bg-gray-600 p-1 fixed bottom-0">
+          <span className="text-gray-100 font-sans text-xs" >
+              Copyright © 2024 Rithik. All Rights Reserved.
+          </span>
+      </div>
       </div>
     );
   }
