@@ -29,7 +29,7 @@ module.exports = {
       // url: process.env.REACT_APP_ALCHEMY_API_URL,
       // accounts: [ process.env.REACT_APP_PRIVATE_KEY ]
             url: "https://eth-sepolia.g.alchemy.com/v2/EWymdXwPlIigIfct_QuZDsh8V5sf-R-e",
-      accounts: [ "0x025bc8bb43e88a4f683a19c36a01a12ba20c16c994a73f99cbe1905aa3c081c1" ]
+      accounts: [ "0xD9e2557D910972802D83B9893A27460519498e17" ]
       
     }
   },
